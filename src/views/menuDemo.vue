@@ -7,7 +7,8 @@
             </template>
             MenuGroup(title='item 1')
                 MenuItem(name='1-1') option 1
-                MenuItem(name='1-2') option 2
+                MenuItem(name='1-2')
+                    router-link(to='/form') to='/form'
         Submenu(name='2')
             <template slot='title'>
                 <Icon type="ios-analytics"></Icon>导航二
