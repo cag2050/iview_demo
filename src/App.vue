@@ -5,6 +5,7 @@
     router-link(to='/button') button <br/>
     router-link(to='/form') form <br/>
     router-link(to='/menu') menu <br/>
+    router-link(to='/layout') layout <br/>
     div === 以下是页面内容 ===
     router-view
 </template>

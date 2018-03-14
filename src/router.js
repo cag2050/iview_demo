@@ -29,6 +29,12 @@ export default new Router({
             name: '',
             component: resolve => require(['./views/menuDemo'], resolve),
             meta: { scrollToTop: true }
+        },
+        {
+            path: '/layout',
+            name: '',
+            component: resolve => require(['./views/layoutDemo'], resolve),
+            meta: { scrollToTop: true }
         }
     ]
 })
