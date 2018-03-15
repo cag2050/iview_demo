@@ -12,16 +12,29 @@
         Sider(ref='side1' hide-trigger collapsible :collapsed-width='78' v-model='isCollapsed')
             <Menu active-name="1-2" theme="dark" width="auto" :class="menuitemClasses">
                 <MenuItem name="1-1">
-                    <Icon type="ios-navigate"></Icon>
-                    <span>Option 1</span>
+                    router-link(to='/')
+                        <Icon type="ios-navigate"></Icon>
+                        <span>首页</span>
                 </MenuItem>
                 <MenuItem name="1-2">
-                    <Icon type="search"></Icon>
-                    <span>Option 2</span>
+                    router-link(to='/button')
+                        <Icon type="search"></Icon>
+                        <span>button</span>
                 </MenuItem>
                 <MenuItem name="1-3">
-                    <Icon type="settings"></Icon>
-                    <span>Option 3</span>
+                    router-link(to='/form')
+                        <Icon type="settings"></Icon>
+                        <span>form</span>
+                </MenuItem>
+                <MenuItem name="1-4">
+                    router-link(to='/menu')
+                        <Icon type="settings"></Icon>
+                        <span>menu</span>
+                </MenuItem>
+                <MenuItem name="1-5">
+                    router-link(to='/layout')
+                        <Icon type="settings"></Icon>
+                        <span>layout</span>
                 </MenuItem>
             </Menu>
         Layout
